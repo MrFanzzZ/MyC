@@ -11,13 +11,13 @@ using namespace std;
 /*void test()
 {
 	Worker* work = NULL;
-	work = new Employee(1, "Ô±¹¤", 1);
+	work = new Employee(1, "å‘˜å·¥", 1);
 	work->showInfo();
 	delete work;
-	work = new Manager(2, "¾­Àí", 2);
+	work = new Manager(2, "ç»ç†", 2);
 	work->showInfo();
 	delete work;
-	work = new Boss(3, "ÀÏ°å", 3);
+	work = new Boss(3, "è€æ¿", 3);
 	work->showInfo();
 	delete work;
 
@@ -34,12 +34,12 @@ int main()
 	while (true)
 	{
 		wm.showmenu();
-		cout << "ÇëÊäÈëÄãµÄÑ¡Ôñ" << endl;
+		cout << "è¯·è¾“å…¥ä½ çš„é€‰æ‹©" << endl;
 		cin >> choice;
 
 		switch (choice)
 		{
-		case 0://ÍË³öÏµÍ³
+		case 0://é€€å‡ºç³»ç»Ÿ
 			wm.exitmenu();
 			break;
 		case 1:

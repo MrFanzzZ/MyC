@@ -5,7 +5,7 @@
 #include"manager.h"
 #include"boss.h"
 #include<fstream>
-#define FILENAME °∞ss.txt°±
+#define FILENAME ‚Äúss.txt‚Äù
 using namespace std;
 
 	WorkManager::WorkManager()
@@ -16,7 +16,7 @@ using namespace std;
 		ifs.open("ss.txt", ios::in);
 		if (!ifs.is_open())
 		{
-			cout << "Œƒº˛≤ª¥Ê‘⁄" << endl;
+			cout << "Êñá‰ª∂‰∏çÂ≠òÂú®" << endl;
 			this->m_num = 0;
 			this->m_Fisempty= true;
 			this->m_array = NULL;
@@ -44,14 +44,14 @@ using namespace std;
 	{
 		cout << "********************" << endl;
 		cout << "****   WELCOME  ****" << endl;
-		cout << "**** 0:ÕÀ≥ˆœµÕ≥ ****" << endl;
-		cout << "**** 1:ÃÌº”»À‘± ****" << endl;
-		cout << "**** 2:œ‘ æ»À‘± ****" << endl;
-		cout << "**** 3:…æ≥˝÷∞π§ ****" << endl;
-		cout << "**** 4:–ﬁ∏ƒ÷∞π§ ****" << endl;
-		cout << "**** 5:≤È’“÷∞π§ ****" << endl;
-		cout << "**** 6:≈≈–Ú÷∞π§ ****" << endl;
-		cout << "**** 7:«Âø’÷∞π§ ****" << endl;
+		cout << "**** 0:ÈÄÄÂá∫Á≥ªÁªü ****" << endl;
+		cout << "**** 1:Ê∑ªÂä†‰∫∫Âëò ****" << endl;
+		cout << "**** 2:ÊòæÁ§∫‰∫∫Âëò ****" << endl;
+		cout << "**** 3:Âà†Èô§ËÅåÂ∑• ****" << endl;
+		cout << "**** 4:‰øÆÊîπËÅåÂ∑• ****" << endl;
+		cout << "**** 5:Êü•ÊâæËÅåÂ∑• ****" << endl;
+		cout << "**** 6:ÊéíÂ∫èËÅåÂ∑• ****" << endl;
+		cout << "**** 7:Ê∏ÖÁ©∫ËÅåÂ∑• ****" << endl;
 
 
 
@@ -62,14 +62,14 @@ using namespace std;
 	}
 	void WorkManager::exitmenu()
 	{
-		cout << "’˝‘⁄ÕÀ≥ˆ°£°£°£" << endl;
+		cout << "Ê≠£Âú®ÈÄÄÂá∫„ÄÇ„ÄÇ„ÄÇ" << endl;
 		system("pause");
 		exit(0);
 	}
 
 void	WorkManager::Add_P()
 	{
-	cout << "«Î ‰»Î“™ÃÌº”µƒ»À‘± ˝¡ø" << endl;
+	cout << "ËØ∑ËæìÂÖ•Ë¶ÅÊ∑ªÂä†ÁöÑ‰∫∫ÂëòÊï∞Èáè" << endl;
 	int num = 0;
 	cin >> num;
 	if (num > 0)
@@ -88,14 +88,14 @@ void	WorkManager::Add_P()
 			int  id;
 			string name;
 			int select;
-			cout << "«Î ‰»Îµ⁄" << i + 1 << "Œª–¬÷∞π§±‡∫≈" << endl;
+			cout << "ËØ∑ËæìÂÖ•Á¨¨" << i + 1 << "‰ΩçÊñ∞ËÅåÂ∑•ÁºñÂè∑" << endl;
 			cin >> id;
-			cout << "«Î ‰»Îµ⁄" << i + 1 << "Œª–¬÷∞π§√˚◊÷" << endl;
+			cout << "ËØ∑ËæìÂÖ•Á¨¨" << i + 1 << "‰ΩçÊñ∞ËÅåÂ∑•ÂêçÂ≠ó" << endl;
 			cin >> name;
-			cout << "«Î ‰»Î÷∞π§∏⁄Œª" << endl;
-			cout << "1£∫‘±π§" << endl;
-			cout << "2£∫æ≠¿Ì" << endl;
-			cout << "3£∫¿œ∞Â" << endl;
+			cout << "ËØ∑ËæìÂÖ•ËÅåÂ∑•Â≤ó‰Ωç" << endl;
+			cout << "1ÔºöÂëòÂ∑•" << endl;
+			cout << "2ÔºöÁªèÁêÜ" << endl;
+			cout << "3ÔºöËÄÅÊùø" << endl;
 			cin >> select;
 			Worker * worker = NULL;
 			switch (select)
@@ -118,7 +118,7 @@ void	WorkManager::Add_P()
 		this->m_array = newspace;
 		this->m_num = newsize;
 		this->m_Fisempty = false;
-		cout << "“—≥…π¶ÃÌº”¡À" << num << "Œª–¬÷∞π§" << endl; 
+		cout << "Â∑≤ÊàêÂäüÊ∑ªÂä†‰∫Ü" << num << "‰ΩçÊñ∞ËÅåÂ∑•" << endl; 
 
 		save();
 	}
@@ -134,7 +134,7 @@ void WorkManager::showemp()
 {
 	if (this->m_Fisempty)
 	{
-		cout << "Œƒº˛≤ª¥Ê‘⁄" << endl;
+		cout << "Êñá‰ª∂‰∏çÂ≠òÂú®" << endl;
 	}
 	else
 	{
@@ -203,14 +203,14 @@ void WorkManager::init_emp()
 {
 	if (this->m_Fisempty)
 	{
-		cout << "Œƒº˛≤ª¥Ê‘⁄" << endl;
+		cout << "Êñá‰ª∂‰∏çÂ≠òÂú®" << endl;
 	}
 	else
 	{
 		for (int i = 0; i < m_num; i++)
 		{
 			this->m_array[i]->showInfo();
-			cout << "÷∞π§±‡∫≈:" << this->m_array[i]->m_id << endl;
+			cout << "ËÅåÂ∑•ÁºñÂè∑:" << this->m_array[i]->m_id << endl;
 		}
 
 	}
@@ -254,11 +254,11 @@ void WorkManager::del_emp()
 
 	if (this->m_Fisempty)
 	{
-		cout << "Œƒº˛≤ª¥Ê‘⁄" << endl;
+		cout << "Êñá‰ª∂‰∏çÂ≠òÂú®" << endl;
 	}
 	else
 	{
-		cout << "«Î ‰»Î“™…æ≥˝µƒ÷∞π§±‡∫≈:" << endl;
+		cout << "ËØ∑ËæìÂÖ•Ë¶ÅÂà†Èô§ÁöÑËÅåÂ∑•ÁºñÂè∑:" << endl;
 		int id = 0;
 		cin >> id;
 		int index = this->isexist(id);
@@ -272,11 +272,11 @@ void WorkManager::del_emp()
 			}
 			this->m_num--;
 			this->save(); 
-			cout << "…æ≥˝≥…π¶!!!!" << endl;
+			cout << "Âà†Èô§ÊàêÂäü!!!!" << endl;
 		}
 		else
 		{
-			cout << "…æ≥˝ ß∞‹!!!!" << endl;
+			cout << "Âà†Èô§Â§±Ë¥•!!!!" << endl;
 		}
 		system("pause");
 		system("cls");
@@ -287,11 +287,11 @@ void WorkManager::modemp()
 {
 	if (this->m_Fisempty)
 	{
-		cout << "Œƒº˛≤ª¥Ê‘⁄" << endl;
+		cout << "Êñá‰ª∂‰∏çÂ≠òÂú®" << endl;
 	}
 	else
 	{
-		cout << "«Î ‰»Î“™–ﬁ∏ƒµƒ÷∞π§±‡∫≈" << endl;
+		cout << "ËØ∑ËæìÂÖ•Ë¶Å‰øÆÊîπÁöÑËÅåÂ∑•ÁºñÂè∑" << endl;
 		int id;
 		cin >> id;
 		int r = this->isexist(id);
@@ -302,11 +302,11 @@ void WorkManager::modemp()
 			int newid=0;
 			string name="  ";
 			int select=0;
-			cout << "«Î ‰»Î–¬±‡∫≈" << endl;
+			cout << "ËØ∑ËæìÂÖ•Êñ∞ÁºñÂè∑" << endl;
 			cin >>newid;
-			cout << "«Î ‰»Î–¬–’√˚" << endl;
+			cout << "ËØ∑ËæìÂÖ•Êñ∞ÂßìÂêç" << endl;
 			cin >> name;
-			cout << "«Î ‰»Î–¬∏⁄Œª" << endl;
+			cout << "ËØ∑ËæìÂÖ•Êñ∞Â≤ó‰Ωç" << endl;
 			cin >> select;
 			Worker  *worker = NULL;
 			switch (select)
@@ -326,14 +326,14 @@ void WorkManager::modemp()
 	
 			this->m_array[r]= worker;
 
-			cout << "–ﬁ∏ƒ≥…π¶£°" << endl;
+			cout << "‰øÆÊîπÊàêÂäüÔºÅ" << endl;
 
 		
 			this->save();
 		}
 		else
 		{
-			cout << "–ﬁ∏ƒ ß∞‹£¨≤ÈŒﬁ¥À»À" << endl;
+			cout << "‰øÆÊîπÂ§±Ë¥•ÔºåÊü•Êó†Ê≠§‰∫∫" << endl;
 		}
 	}
 	system("pause");
@@ -344,13 +344,13 @@ void WorkManager::find_emp()
 {
 	if (this->m_Fisempty)
 	{
-		cout << "Œƒº˛≤ª¥Ê‘⁄ªÚº«¬ºŒ™ø’£°" << endl;
+		cout << "Êñá‰ª∂‰∏çÂ≠òÂú®ÊàñËÆ∞ÂΩï‰∏∫Á©∫ÔºÅ" << endl;
 	}
 	else
 	{
-		cout << "«Î ‰»Î≤È’“µƒ∑Ω Ω£∫" << endl;
-		cout << "1°¢∞¥÷∞π§±‡∫≈≤È’“" << endl;
-		cout << "2°¢∞¥–’√˚≤È’“" << endl;
+		cout << "ËØ∑ËæìÂÖ•Êü•ÊâæÁöÑÊñπÂºèÔºö" << endl;
+		cout << "1„ÄÅÊåâËÅåÂ∑•ÁºñÂè∑Êü•Êâæ" << endl;
+		cout << "2„ÄÅÊåâÂßìÂêçÊü•Êâæ" << endl;
 
 		int select = 0;
 		cin >> select;
@@ -359,24 +359,24 @@ void WorkManager::find_emp()
 		if (select == 1) 
 		{
 			int id;
-			cout << "«Î ‰»Î≤È’“µƒ÷∞π§±‡∫≈£∫" << endl;
+			cout << "ËØ∑ËæìÂÖ•Êü•ÊâæÁöÑËÅåÂ∑•ÁºñÂè∑Ôºö" << endl;
 			cin >> id;
 
 			int ret = isexist(id);
 			if (ret != -1)
 			{
-				cout << "≤È’“≥…π¶£°∏√÷∞π§–≈œ¢»Áœ¬£∫" << endl;
+				cout << "Êü•ÊâæÊàêÂäüÔºÅËØ•ËÅåÂ∑•‰ø°ÊÅØÂ¶Ç‰∏ãÔºö" << endl;
 				this->m_array[ret]->showInfo();
 			}
 			else
 			{
-				cout << "≤È’“ ß∞‹£¨≤ÈŒﬁ¥À»À" << endl;
+				cout << "Êü•ÊâæÂ§±Ë¥•ÔºåÊü•Êó†Ê≠§‰∫∫" << endl;
 			}
 		}
 		else if (select == 2) 
 		{
 			string name;
-			cout << "«Î ‰»Î≤È’“µƒ–’√˚£∫" << endl;
+			cout << "ËØ∑ËæìÂÖ•Êü•ÊâæÁöÑÂßìÂêçÔºö" << endl;
 			cin >> name;
 
 			bool flag = false;  
@@ -384,9 +384,9 @@ void WorkManager::find_emp()
 			{
 				if (m_array[i]->m_name== name)
 				{
-					cout << "≤È’“≥…π¶,÷∞π§±‡∫≈Œ™£∫"
+					cout << "Êü•ÊâæÊàêÂäü,ËÅåÂ∑•ÁºñÂè∑‰∏∫Ôºö"
 						<< m_array[i]->m_id
-						<< " ∫≈µƒ–≈œ¢»Áœ¬£∫" << endl;
+						<< " Âè∑ÁöÑ‰ø°ÊÅØÂ¶Ç‰∏ãÔºö" << endl;
 
 					flag = true;
 
@@ -396,7 +396,7 @@ void WorkManager::find_emp()
 			if (flag == false)
 			{
 		
-				cout << "≤È’“ ß∞‹£¨≤ÈŒﬁ¥À»À" << endl;
+				cout << "Êü•ÊâæÂ§±Ë¥•ÔºåÊü•Êó†Ê≠§‰∫∫" << endl;
 			}
 		}
 		else
@@ -414,15 +414,15 @@ void WorkManager::sort_emp()
 {
 	if (this->m_Fisempty)
 	{
-		cout << "Œƒº˛≤ª¥Ê‘⁄" << endl;
+		cout << "Êñá‰ª∂‰∏çÂ≠òÂú®" << endl;
 		system("pause");
 		system("cls");
 	}
 	else
 	{
-		cout << "«Î—°‘Ò≈≈–Ú∑Ω Ω£∫ " << endl;
-		cout << "1£∫∞¥÷∞π§∫≈Ω¯––…˝–Ú" << endl;
-		cout << "2£∫∞¥÷∞π§∫≈Ω¯––Ωµ–Ú" << endl;
+		cout << "ËØ∑ÈÄâÊã©ÊéíÂ∫èÊñπÂºèÔºö " << endl;
+		cout << "1ÔºöÊåâËÅåÂ∑•Âè∑ËøõË°åÂçáÂ∫è" << endl;
+		cout << "2ÔºöÊåâËÅåÂ∑•Âè∑ËøõË°åÈôçÂ∫è" << endl;
 
 		int select = 0;
 		cin >> select;
@@ -458,7 +458,7 @@ void WorkManager::sort_emp()
 
 		}
 
-		cout << "≈≈–Ú≥…π¶,≈≈–Ú∫ÛΩ·π˚Œ™£∫" << endl;
+		cout << "ÊéíÂ∫èÊàêÂäü,ÊéíÂ∫èÂêéÁªìÊûú‰∏∫Ôºö" << endl;
 		this->save();
 		this->showemp();
 	}
@@ -483,7 +483,7 @@ void WorkManager::clearfile()
 		this->m_array = NULL;
 		this->m_Fisempty = true;
 	}
-	cout << "«Âø’≥…π¶£°" << endl;
+	cout << "Ê∏ÖÁ©∫ÊàêÂäüÔºÅ" << endl;
 
 
 }
